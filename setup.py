@@ -15,7 +15,7 @@ version = (Path(__file__).parent / "mypackage/VERSION").read_text("ascii").strip
 install_requires = [
     "icecream",
     "numpy",
-    "setuptools",
+    "setuptools>=61.0",
 ]
 extras_require = dict()  # Some examples at https://github.com/scrapy/scrapy/blob/2.11/setup.py
 

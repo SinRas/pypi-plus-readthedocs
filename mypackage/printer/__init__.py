@@ -18,5 +18,6 @@ class PrinterMain:
 
     # Repeat my number
     def shout(self, number: Any) -> None:
-        ic(f"SHOUT!!!: {number}")
+        msg = f"SHOUT!!!: {number}"
+        ic(msg)
         return
