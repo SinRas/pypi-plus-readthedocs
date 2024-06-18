@@ -11,7 +11,11 @@ from setuptools import find_packages, setup
 
 version = (Path(__file__).parent / "mypackage/VERSION").read_text("ascii").strip()
 
-
+setup_requires = [
+    "icecream",
+    "numpy",
+    "setuptools>=61.0",
+]
 install_requires = [
     "icecream",
     "numpy",
@@ -51,5 +55,6 @@ setup(
     ],  # List of all possible classifiers: https://pypi.org/classifiers/
     python_requires=">=3.11",
     install_requires=install_requires,
+    setup_requires=setup_requires,
     extras_require=extras_require,
 )
